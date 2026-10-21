@@ -11,6 +11,6 @@ function siteOrigin(value: string | undefined): string | undefined {
 
 export const siteUrl = siteOrigin(configuredUrl);
 export const seo = {
-  title: 'Артём Попов — автор песен и тексты на заказ',
+  title: 'Артём Попов',
   description: 'Артём Попов — автор песен из Обояни Курской области. Музыка и релизы, поздравления в стихах и прозе, тосты и речи на заказ. Срок 1–3 дня.',
 };

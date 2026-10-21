@@ -12,7 +12,7 @@ function SectionTitle({ index, title, label }: { index: string; title: string; l
 export default function Home() {
   return <><a href="#main" className="skip-link">Перейти к содержимому</a><Header /><main id="main">
     <section className="hero" id="home">
-      <div className="hero-top"><span className="eyebrow"><i className="dot" /> Автор песен / Обоянь</span><span className="eyebrow">Артём Попов</span></div>
+      <div className="hero-top"><span className="eyebrow"><i className="dot" /> Автор песен</span><span className="eyebrow">Артём Попов</span></div>
       <h1><span>АРТЁМ</span><span className="outlined">ПОПОВ<span className="name-star" aria-hidden="true">✳</span></span></h1>
       <div className="hero-art" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" /><div className="art-line" /><span className="art-label">AP / SOUND IN MOTION</span></div>
       <div className="hero-bottom"><p>Звук. Момент.<br />Всё, что между нами.</p><a className="button primary" href="#music">К музыке <span>↗</span></a><a className="scroll-link" href="#music">Листай вниз ↓</a></div>
