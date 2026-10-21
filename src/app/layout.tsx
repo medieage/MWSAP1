@@ -1,9 +1,11 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { seo, siteUrl } from "@/lib/seo";
 import { artist } from "@/data/artist";
 import "./globals.css";
 import "./background.css";
 import "./marquee.css";
+import "./chat.css";
 import { SiteBackground } from "@/components/site-background";
 
 export const metadata: Metadata = {
@@ -34,5 +36,18 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     sameAs: [...artist.socials, ...artist.platforms].map(({ url }) => url),
   };
   // Browser extensions such as TokenPocket inject attributes on <html> before hydration.
-  return <html lang="ru" suppressHydrationWarning><body><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} /><SiteBackground />{children}</body></html>;
+  return <html lang="ru" suppressHydrationWarning><body><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} /><SiteBackground />{children}
+    <Script id="livetex-chat" strategy="afterInteractive">{`
+      window.liveTex = true;
+      window.liveTexID = 182813;
+      window.liveTex_object = true;
+      (function () {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = 'https://cs15.livetex.ru/js/client.js';
+        document.body.appendChild(script);
+      })();
+    `}</Script>
+  </body></html>;
 }

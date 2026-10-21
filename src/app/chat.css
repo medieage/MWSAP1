@@ -1,0 +1,9 @@
+/* Keep the LiveTex launcher in the requested corner on desktop and mobile. */
+.lt-label,
+.lt-xbutton-main-wrapper {
+  position: fixed !important;
+  top: auto !important;
+  left: auto !important;
+  right: max(16px, env(safe-area-inset-right)) !important;
+  bottom: max(16px, env(safe-area-inset-bottom)) !important;
+}
