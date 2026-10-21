@@ -1,0 +1,2 @@
+Created with the built-in image_gen tool, using the supplied service poster as the edit target.
+Prompt: Restyle the Russian writing-service poster to match the website: graphite #111310, dark olive #191c17, warm off-white #f0f0e7 and acid lime #d5fb54. Preserve fountain pen, envelope and meaning. Use modern sans-serif typography, subtle orbital curves, sparse stars and a thin border. Exact text: ТЕКСТЫ / НА ЗАКАЗ / ПОЗДРАВЛЕНИЯ / ТОСТЫ И РЕЧИ / ДЛЯ ВАС. No extra text or watermark.
