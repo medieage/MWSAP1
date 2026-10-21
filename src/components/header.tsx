@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-const links = [["Об авторе", "about"], ["Музыка", "music"], ["Будущий релиз", "upcoming"], ["Тексты на заказ", "services"], ["Новости", "news"]];
+const links = [["Биография", "about"], ["Музыка", "music"], ["Будущий релиз", "upcoming"], ["Тексты на заказ", "services"], ["Новости", "news"]];
 
 export function Header() {
   const [open, setOpen] = useState(false);
