@@ -45,7 +45,7 @@ export default function Home() {
             <li><span>AP</span><strong>Вы творите</strong><em>Сеть на нас</em></li>
           </ul>
         </div>
-        <div className="service-body"><div><span className="eyebrow accent">Без лишней суеты</span><h3>Арт-менеджмент.<br />Ведение соцсетей.</h3><p>{artist.artManagement.description}</p></div><div className="service-order"><span className="service-deadline">Стоимость <strong>{artist.artManagement.price}</strong></span><a className="button primary" href={artist.artManagement.orderUrl} target="_blank" rel="noreferrer">Заказать ведение ↗</a><a className="text-link" href={artist.vkGroup.url} target="_blank" rel="noreferrer">Все вопросы — в сообщения группы</a></div></div>
+        <div className="service-body"><div><span className="eyebrow accent">Без лишней суеты</span><h3>Арт-менеджмент.<br />Ведение соцсетей.</h3><p>{artist.artManagement.description}</p></div><div className="service-order"><span className="service-deadline">Оплата {artist.artManagement.pricePeriod} <strong>{artist.artManagement.price}</strong></span><a className="button primary" href={artist.artManagement.orderUrl} target="_blank" rel="noreferrer">Заказать ведение ↗</a><a className="text-link" href={artist.vkGroup.url} target="_blank" rel="noreferrer">Все вопросы — в сообщения группы</a></div></div>
       </div>
       <p className="service-platforms-note">{artist.artManagement.platformsNote}</p>
       <div className="writing-formats writing-formats-two">{artist.artManagement.platforms.map((platform, index) => <article key={platform.title}><span className="eyebrow accent">0{index + 1}</span><h3>{platform.title}</h3><p>{platform.description}</p></article>)}</div>
